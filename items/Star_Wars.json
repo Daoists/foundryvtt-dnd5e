@@ -2,14 +2,14 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "Giddy",
-				"abbreviation": "Brew",
-				"full": "Ryanliu6",
+				"json": "StarWars",
+				"abbreviation": "SW",
+				"full": "Star Wars Items",
 				"authors": [
 					"Ryanliu6"
 				],
 				"version": "1.0.0",
-				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"url": "https://github.com/Daoists/foundryvtt-dnd5e",
 				"targetSchema": "1.0.0"
 			}
 		],
@@ -26,8 +26,8 @@
 				}
 			]
 		},
-		"dateAdded": 0,
-		"dateLastModified": 0
+		"dateAdded": 1596181983,
+		"dateLastModified": 1596181983
 	},
 	"itemProperty": [
 		{
