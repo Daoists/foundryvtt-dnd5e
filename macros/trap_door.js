@@ -1,4 +1,4 @@
- (
+(
   function() {
     function getRandomInt(min, max) {
       min = Math.ceil(min);
@@ -6,11 +6,25 @@
       return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
     }
 
+    function DCToDamageDie(dc) {
+      if (dc < 10) {
+        return "1d4"
+      } else if (10 <= dc && dc <= 12) {
+        return "1d6"
+      } else if (13 <= dc && dc <= 15) {
+        return "2d6"
+      } else if (16 <= dc && dc <= 18) {
+        return "3d6"
+      } else {
+        return "4d6"
+      }
+    }
+
     // Getting DC
-    let trapDC = getRandomInt(10, 15);
+    let trapDC = getRandomInt(10, 16);
 
     // Getting damage die
-    let damageDie = getRandomInt(0, 2) ? "1d12" : "2d6";
+    let damageDie = DCToDamageDie(trapDC)
 
     // Create chat content
     let chatContent = `
